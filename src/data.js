@@ -1,4 +1,3 @@
-import {SiOpenaigym} from 'react-icons/si'
 
 export const links =[
 {
@@ -8,27 +7,27 @@ export const links =[
 },
 {
     name:"About",
-    path:'/'
+    path:'/about'
  
 },
 {
     name:"3Rwaste",
-    path:'/'
+    path:'/3Rwaste'
  
 },
 {
     name:"GHero",
-    path:'/'
+    path:'/GHero'
  
 },
 {
     name:"Login",
-    path:'/'
+    path:'/login'
  
 },
 {
     name:"Register",
-    path:'/'
+    path:'/register'
  
 },
 ]

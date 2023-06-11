@@ -1,9 +1,13 @@
 
 import React from 'react'
 import './register.css'
+import Footer from '../../components/Footer'
+
+
 
 const Register = () => {
   return (
+    <>
     <r>
     <div className="box1">
         <form action="">
@@ -57,6 +61,8 @@ const Register = () => {
 
     </div>
 </r>
+<Footer/>
+</>
   )
 }
 

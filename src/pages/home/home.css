@@ -14,19 +14,45 @@
     gap: 6rem;
 }
 .main__header-left {
-    margin-top: -4rem;
+    margin-top: -3rem;
 }
 .main__header-left h4{
     margin-bottom: 1rem;
-    color:rgb(0, 0, 0);
-    font-weight: bold;
+    color:var(--color-primary);
+    font-weight: 400;
 }
 .main__header-left p{
+    color:var(--color-gray-350);
     margin: 1rem 0 3.5rem;
     font-size: 1.1rem;
+    line-height: 1.7rem;
 }
-
-
+.btn{
+    color:var(--color-primary-variant);
+    width:fit-content;
+    margin: 0 auto;
+    padding: 0.9rem 2rem;
+    background: var(--color-primary);
+    border-radius: 1.5rem;
+    transition: var(--transition);
+}
+.btn:hover{
+    background: var(--color-primary-variant);
+}
+.btn.lg{
+    padding:0.7rem 1rem;
+    border-radius: 12rem;
+    font-size: 1.1rem;
+}
+.main__header-right{
+    margin: 0;
+    padding: 0;
+    height:90vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
 
 /*FOOTER*/
 footer {

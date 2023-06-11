@@ -2,8 +2,10 @@
 import './login.css'
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Footer from '../../components/Footer'
 const Login = () => {
   return (
+    <>
     <l>
       <div className="box">
       <form action="">
@@ -29,6 +31,8 @@ const Login = () => {
         </form>
       </div>
     </l>
+    <Footer/>
+    </>
   );
 };
 
