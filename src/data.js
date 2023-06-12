@@ -1,5 +1,5 @@
 
-export const links =[
+const links =[
 {
     name:"Home",
     path:'/'
@@ -31,4 +31,50 @@ export const links =[
  
 },
 ]
+const gcollector=[
+    {
+        photo:"./images/gcollector1.jpg",
+        gid:1,
+        name:"Jeevan  Chand",
+        address:"Chitwan",
+        phonenumber:984311000,
+        gamil:"jeevan0001@gnail.com"
+        
+    },
+    {
+        photo:"./images/gcollector2.jpg",
+        gid:2,
+        name:"Laxman Bola",
+        address:"Salyan",
+        phonenumber:9843220000,
+        gamil:"laxman0002@gnail.com"
+        
+
+    },
+    {
+        gid:3,
+        name:"Shreya Sahani",
+        address:"Rukum",
+        phonenumber:9843330000,
+        gamil:"shreya0003@gnail.com",
+        photo:"./images/gcollector4.jpg"
+    },
+    {
+        gid:4,
+        name:"Shyam Karki",
+        address:"Dolpa",
+        phonenumber:9843440000,
+        gamil:"shyam0004@gnail.com",
+        photo:"./images/gcollector5.jpg"
+    },
+    {
+        gid:5,
+        name:"Srijana Sahani ",
+        address:"Bharatpur",
+        phonenumber:9843550000,
+        gamil:"hari0005@gnail.com",
+        photo:"./images/pp3.jpg"
+    }
+]
+export  {links,gcollector};
     
