@@ -35,6 +35,3 @@
 .main_container li:hover{
     transform: scale(1.3);
 }
-.main_containerli:hover:not(){
-    opacity: 20%;
-}
