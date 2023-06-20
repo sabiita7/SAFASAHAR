@@ -76,5 +76,78 @@ const gcollector=[
         photo:"./images/pp3.jpg"
     }
 ]
-export  {links,gcollector};
+const waste=[
+    {
+        Type:"Paper waste",
+        name:"Books",
+        Cost :25,
+        url:'https://www.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fwaste&psig=AOvVaw0OZQENbOGS2C-ownn2hYLW&ust=1687268933859000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCPioqN28z_8CFQAAAAAdAAAAABAE',
+        alt:'hii'
+    },
+    {
+        Type:"Paper waste",
+        name:"Copy",
+        Cost :25
+    },
+    {
+        Type:"Paper waste",
+        name:"Newspaper",
+        Cost:25
+    },
+    {
+        Type:"Paper waste",
+        name:"Magazine",
+        Cost :25
+    },
+    {
+        Type:"Glass Waste",
+        name:"Beer Bottles",
+        Cost :40
+    },
+    {
+        Type:"Plastic waste",
+        name:"Plastic bottles",
+        Cost :30
+    },
+    {
+        Type:"Jute waste",
+        name:"Jute bags",
+        Cost :45
+    },
+    {
+        Type:"Jute waste",
+        name:"jute reusable items",
+        Cost :45
+    },
+    {
+        Type:"Metal Waste",
+        name:"copperitems",
+        Cost :300}
+        ,
+    {
+        Type:"Metal Waste",
+        name:"steelitems",
+        Cost :300}
+        ,
+        {
+        Type:"E-waste",
+        name:"computer",
+        Cost:250}
+        ,
+        {
+        Type:"E-waste",
+        name:"generator",
+        Cost :250}
+        ,
+        {
+        Type:"E-waste",
+        name:"battery",
+        Cost :250}
+    
+
+
+    ]
+
+export  {links,gcollector,waste};
+
     

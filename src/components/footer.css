@@ -1,0 +1,32 @@
+
+  .footer__socials {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .footer__info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0px;
+  }
+  .follow-principle {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    white-space: nowrap;
+    font-size: 30px;
+    font-weight: 500;
+    color: #333;
+    margin: 0;
+    padding: 10px;
+    text-align: right;
+  }
+  
+  
+  .centered-content {  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  

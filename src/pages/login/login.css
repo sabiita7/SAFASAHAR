@@ -16,6 +16,7 @@ l{
     border-radius: 50px 5px;
     overflow: hidden;
 }
+/*
 .box::before {
     content: '';
     position: absolute;
@@ -49,7 +50,7 @@ l{
         transform: rotate(360deg);
     }
 }
-
+*/
 form{
     position: absolute;
     inset: 2px;

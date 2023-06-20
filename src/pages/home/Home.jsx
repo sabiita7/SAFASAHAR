@@ -6,9 +6,10 @@ import './home.css'
 const Home = () => {
   return (
     <>
+    
       <MainHeader/>
       <Footer/>
-    </>
+  </>
   )
 }
 
