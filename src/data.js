@@ -34,7 +34,7 @@ const links =[
 ]
 const gcollector=[
     {
-        photo:"./images/gcollector1.jpg",
+        photo:"../images/gcollector1.jpg",
         gid:1,
         name:"Jeevan  Chand",
         address:"Chitwan",
@@ -43,7 +43,7 @@ const gcollector=[
         
     },
     {
-        photo:"./images/gcollector2.jpg",
+        photo:"../images/gcollector2.jpg",
         gid:2,
         name:"Laxman Bola",
         address:"Salyan",
@@ -58,7 +58,7 @@ const gcollector=[
         address:"Rukum",
         phonenumber:9843330000,
         gamil:"shreya0003@gnail.com",
-        photo:"./images/gcollector4.jpg"
+        photo:"../images/gcollector4.jpg"
     },
     {
         gid:4,
@@ -66,7 +66,7 @@ const gcollector=[
         address:"Dolpa",
         phonenumber:9843440000,
         gamil:"shyam0004@gnail.com",
-        photo:"./images/gcollector5.jpg"
+        photo:"../images/gcollector5.jpg"
     },
     {
         gid:5,
@@ -74,7 +74,7 @@ const gcollector=[
         address:"Bharatpur",
         phonenumber:9843550000,
         gamil:"hari0005@gnail.com",
-        photo:"./images/pp3.jpg"
+        photo:"../images/pp3.jpg"
     }
 ]
 const wastetype=[
