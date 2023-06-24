@@ -7,7 +7,7 @@ const MainHeader = () => {
 <div className="container main__header-container">
   <div className="main__header-left">
 <h4>Reduce,Reuse,Recycle</h4>
-<h1>Recycle Starts Here.</h1>
+<h1>Recycle Starts Here !</h1>
 <p>The 3R approach to waste management - reduce,
    reuse, and recycle - has emerged as a sustainable
     strategy to address the growing problem of waste
@@ -17,7 +17,7 @@ const MainHeader = () => {
       reused. Successful implementation of the 3R approach 
       requires a collaborative effort 
   between governments, businesses, and individuals</p>
-<Link to="/register" className='btn lg'>Lets Start</Link>
+<Link to="/register" className='btn lg'>Lets Start...</Link>
   </div>
   <div className="main__header-right">
     <img src={Image} alt="Main Header Image" />
