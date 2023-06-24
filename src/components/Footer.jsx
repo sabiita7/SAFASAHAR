@@ -18,9 +18,9 @@ const Footer = () => {
         <div>
           <h5 className="follow-principle">Lets follow 3R Principle</h5>
           <div className="footer__socials">
-            <a href="https://facebook.com/" target="_blank" rel='noreferrer noopener'><AiFillFacebook/></a>
-            <a href="https://twitter.com/" target="_blank" rel='noreferrer noopener'><AiOutlineTwitter/></a>
-            <a href="https://instagram.com/" target="_blank" rel='noreferrer noopener'><AiFillInstagram/></a>
+            <a  href="https://facebook.com/" target="_blank" rel='noreferrer noopener' className='footer__social1'><AiFillFacebook/></a>
+            <a href="https://twitter.com/" target="_blank" rel='noreferrer noopener' className='footer__social2'><AiOutlineTwitter/></a>
+            <a href="https://instagram.com/" target="_blank" rel='noreferrer noopener' className='footer__social3'><AiFillInstagram/></a>
           </div>
         </div>
       </div>

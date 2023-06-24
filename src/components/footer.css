@@ -1,9 +1,18 @@
   
   .footer__socials {
     display: flex;
-    gap: 10px;
+    gap: 15px;
     color: #f9f0f0;
     justify-content: center;
+  }
+  .footer__social1 svg{
+    color:white;
+  }
+  .footer__social2 svg{
+    color:white;
+  }
+  .footer__social3 svg{
+    color:white;
   }
   
   
