@@ -1,7 +1,7 @@
 nav {
     height: 5rem;
     width: 100vw;
-    background: var(--color-primary);
+    background:green;
     display: grid;
     place-items: center;
     position: fixed;
@@ -10,11 +10,7 @@ nav {
     z-index: 99;
 
 }
-/* only shows on medium and small screens*/
 
-.nav__toggle-btn {
-    display: none;
-}
 
 .nav__container {
     height:100%;
@@ -34,7 +30,9 @@ nav {
     gap: 3.5rem;
     align-items: center;
 }
-
+.safasahar_link{
+color:white;
+}
 .nav__links a{
     transition: var(--transition);
 }
@@ -42,7 +40,7 @@ nav {
     color: var(--color-secondary);
 }
 .nav__links li.active {
-    background-color: black;
+    background-color: white;
 }
 .active-nav {
     position: relative;

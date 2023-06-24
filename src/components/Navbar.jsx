@@ -17,28 +17,16 @@ const Navbar = () => {
         links.map(({name, path}, index) =>{
             return(
                 <li key={index}>
-                    <NavLink to={path}> {name} </NavLink>
+                    <NavLink to ={path} className='safasahar_link'> {name}  </NavLink>
                 </li>
             )
         })
     }
 </ul>
-      <button className="nav__toggle-btn"></button>
       </div>   
     </nav>
   )
 }
-/*
-function CustomLink({ to, children, ...props }) {
-  const resolvedPath = useResolvedPath(to)
-  const isActive = useMatch({ path: resolvedPath.pathname, end: true })
 
-  return (
-    <li className={isActive ? "active" : ""}>
-      <Link to={to} {...props}>
-        {children}
-      </Link>
-    </li>
-  )*/
 
 export default Navbar;

@@ -7,7 +7,8 @@ import About from './pages/about/About';
 import Navbar from './components/Navbar';
 import Login from './pages/login/Login';
 import Register from './pages/register/Register';
-import Gallery from './pages/3Rwaste/Waste';
+
+
 const App = () => {
   return (
     <BrowserRouter>
@@ -19,8 +20,8 @@ const App = () => {
         <Route path="/GHero" element={<GHero />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/Gallery" element={<Gallery />} />
       </Routes>
+      
     </BrowserRouter>
   );
 };

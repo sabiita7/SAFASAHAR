@@ -6,7 +6,7 @@ r{
     display: flex;
     justify-content: center;
     align-items: center;
-     min-height: 110vh;
+     min-height: 120vh;
 
 }
 
@@ -14,7 +14,7 @@ r{
     position: relative;
     width: 420px;
     height: 670px;
-    background: rgb(150, 56, 56);
+    background: white;
     border-radius: 50px 5px;
     overflow: hidden;
 }
@@ -57,6 +57,7 @@ form{
     position: absolute;
     inset: 2px;
     border-radius: 50px 5px;
+    box-shadow:5px 5px 5px green;
     background:var(--color-gray-300); 
     z-index: 10;
     padding: 7px 30px;

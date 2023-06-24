@@ -8,10 +8,10 @@ const Password= () => {
     e.preventDefault();
 
     if (password === confirmPassword) {
-      // Passwords match, perform further actions (e.g., API call, form validation)
+    
       console.log('Passwords match');
     } else {
-      // Passwords don't match, handle the error (e.g., display an error message
+    
       console.log("Passwords don't match");
     }
   };

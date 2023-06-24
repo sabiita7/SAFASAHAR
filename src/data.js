@@ -30,6 +30,7 @@ const links =[
     path:'/register'
  
 },
+
 ]
 const gcollector=[
     {
@@ -76,13 +77,30 @@ const gcollector=[
         photo:"./images/pp3.jpg"
     }
 ]
+const wastetype=[
+    {
+        name:"Paper",
+        path:'/paper'
+    },
+    {
+        name:"E-waste",
+        path:'/ewaste'
+    },
+    {
+        name:"Bottle",
+        path:'/bottle'
+    },
+    {
+        name:"Metal&Steel",
+        path:'/metalsteel'
+    },
+
+]
 const waste=[
     {
         Type:"Paper waste",
         name:"Books",
         Cost :25,
-        url:'https://www.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fwaste&psig=AOvVaw0OZQENbOGS2C-ownn2hYLW&ust=1687268933859000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCPioqN28z_8CFQAAAAAdAAAAABAE',
-        alt:'hii'
     },
     {
         Type:"Paper waste",
@@ -148,6 +166,6 @@ const waste=[
 
     ]
 
-export  {links,gcollector,waste};
+export  {links,gcollector,waste,wastetype};
 
     

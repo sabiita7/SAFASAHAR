@@ -47,24 +47,4 @@
     
 }
 
-/*FOOTER*/
-footer {
-    background-color: var(--color-primary);
-    margin-top: 7rem;
-    padding-top: 7rem;
-    font-size: 1.5rem;
-    color: var(--color-gray-100)
-}
 
-.footer__container {
-    display: grid;
-    grid-template-columns: 26rem 1fr 1fr 1fr;
-    gap: 6rem;
-}
-
-.footer__container article {
-display:flex;
-flex-direction: column;
-align-items:flex-start;
-gap:0.7rem;
-}

@@ -12,7 +12,7 @@ l{
     position: relative;
     width:370px;
     height: 400px;
-    background: rgb(150, 56, 56);
+    background: white;
     border-radius: 50px 5px;
     overflow: hidden;
 }
@@ -55,6 +55,7 @@ form{
     position: absolute;
     inset: 2px;
     border-radius: 50px 5px;
+    box-shadow:5px 5px 5px green;
     background:var(--color-gray-300); 
     z-index: 10;
     padding: 30px 30px;
@@ -79,7 +80,7 @@ h2{
     background: transparent;
     border: none;
     outline: none;
-    color:var(--color-gray-100);
+    color:black;
     font-size: 1em;
     letter-spacing: 0.05em;
     z-index: 10;
