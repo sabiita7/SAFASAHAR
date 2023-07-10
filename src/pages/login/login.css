@@ -11,46 +11,15 @@ l{
 .box{
     position: relative;
     width:370px;
-    height: 400px;
+    height: 475px;
     background: white;
     border-radius: 50px 5px;
     overflow: hidden;
-}
-/*
-.box::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 370px;
-    height: 400px;
-    background: linear-gradient(60deg, transparent, rgb(248, 224, 7), rgb(248, 224, 7)  );
-    transform-origin: bottom right;
-    animation: animate 6s linear infinite;
+    margin-top:100px;
+    margin-left:480px;
 }
 
-.box::after {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 370px;
-    height: 400px;
-    background: linear-gradient(60deg, transparent, rgb(248, 224, 7), rgb(248, 224, 7));
-    transform-origin: bottom right;
-    animation: animate 6s linear infinite;
-    animation-delay: -3s;
-}
 
-@keyframes animate {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-*/
 form{
     position: absolute;
     inset: 2px;
@@ -161,3 +130,5 @@ h2{
     text-decoration: underline 2px;
     text-underline-offset: 5px;
 }
+
+  

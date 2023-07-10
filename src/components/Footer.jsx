@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../images/logo.png';
+import newlogo from '../images/newlogo.png';
 import { Link } from 'react-router-dom';
 import { AiFillFacebook } from 'react-icons/ai';
 import { AiOutlineTwitter } from 'react-icons/ai';
@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="footer__container">
         <div className="footer__logo">
           <Link to="/" className='logo'>
-            <img src={Logo} alt="Footer Logo" />
+            <img src={newlogo} alt="Footer Logo" />
           </Link>
         </div>
         <div>

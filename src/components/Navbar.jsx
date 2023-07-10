@@ -1,6 +1,6 @@
 import { Link, NavLink} from 'react-router-dom'
 import './navbar.css'
-import Logo from '../images/logo.png'
+import newlogo from '../images/newlogo.png'
 import { links} from '../data'
 
 
@@ -10,7 +10,7 @@ const Navbar = () => {
     <nav>
       <div className="container nav__container">
       <Link to="/" className='logo'>
-        <img src={Logo} alt="Nav logo"/>
+        <img src={newlogo} alt="Nav logo"/>
       </Link>
 <ul className='nav__links'>
     {

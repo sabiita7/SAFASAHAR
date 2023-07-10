@@ -1,69 +1,146 @@
 
-import React from 'react'
-import './register.css'
-import Footer from '../../components/Footer'
-
-
+import './register.css';
+import React, { useState } from 'react';
+import Footer from '../../components/Footer';
 
 const Register = () => {
+  const [name, setName] = useState('');
+  const [address, setAddress] = useState('');
+  const [phoneNumber, setPhoneNumber] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
+  const [userType, setUserType] = useState('nagarik');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    let register_data = {
+      name,
+      address,
+      phoneNumber,
+      email,
+      password,
+      confirmPassword,
+      userType,
+    };
+    console.log(register_data);
+    fetch('http://127.0.0.1:8000/api/register/', {
+      method: 'POST',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify(register_data),
+    })
+      .then((res) => {
+        alert('Registered Successfully');
+      })
+      .catch((err) => {
+        alert('Failed: ' + err.message);
+      });
+  };
+
   return (
     <>
-    <r>
-    <div className="box1">
-        <form action="">
-            <h2>Register</h2>
-            <div className="inputBox">
-                <input type="text"  name="name"  autoComplte="off" required/>
-                <span>Name</span>
-                <i></i>
+      <div className="box1">
+        <form onSubmit={handleSubmit}>
+          <h2>Register</h2>
+          <div className="inputBox">
+            <input
+              type="text"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              autoComplete="off"
+            />
+            <span>Name</span>
+            <i></i>
+          </div>
+          <div className="inputBox">
+            <input
+              type="text"
+              name="address"
+              value={address}
+              onChange={(e) => setAddress(e.target.value)}
+              autoComplete="off"
+            />
+            <span>Address</span>
+            <i></i>
+          </div>
+          <div className="inputBox">
+            <input
+              type="text"
+              value={phoneNumber}
+              onChange={(e) => setPhoneNumber(e.target.value)}
+              autoComplete="off"
+            />
+            <span>Phonenumber</span>
+            <i></i>
+          </div>
+          <div className="inputBox">
+            <input
+              type="text"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              autoComplete="off"
+            />
+            <span>Email</span>
+            <i></i>
+          </div>
+          <div className="inputBox">
+            <input
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              autoComplete="off"
+            />
+            <span>Password</span>
+            <i></i>
+          </div>
+          <div className="inputBox">
+            <input
+              type="password"
+              value={confirmPassword}
+              onChange={(e) => setConfirmPassword(e.target.value)}
+              autoComplete="off"
+            />
+            <span>Confirm Password</span>
+            <i></i>
+          </div>
 
-            </div>
-            <div className="inputBox">
-                <input type="text"  name="address" autoComplte="off" required/>
-                <span>Address</span>
-                <i></i>
+          <div>
+            <input
+              type="radio"
+              checked={userType === 'nagarik'}
+              onChange={() => setUserType('nagarik')}
+              id="nagarik"
+              name="userType"
+            />
+            <label htmlFor="nagarik">Nagarik</label>
 
-            </div>
-            <div className="inputBox">
-                <input type="text" name="phonenumber"autoComplte="off" required />
-                <span>Phone Number</span>
-                <i></i>
+            <input
+              type="radio"
+              checked={userType === 'g_collector'}
+              onChange={() => setUserType('g_collector')}
+              id="g_collector"
+              name="userType"
+            />
+            <label htmlFor="g_collector">G-collector</label>
 
-            </div>
-            <div className="inputBox">
-                <input type="text"  name="email" autoComplte="off" required/>
-                <span>Email</span>
-                <i></i>
-            </div>
-            <div className="inputBox">
-                <input type="password" name="password" autoComplte="off" required />
-                <span>Password</span>
-                <i></i>
-            </div>
-            <div className="inputBox">
-                <input type="password" name="cpassword"  autoComplte="off" required/>
-                <span>Confirm Password</span>
-                <i></i>
-                
-            </div>
-             <div>
-                 <input type="radio" id="nagarik" name="user" value="nagarik" required />
-                 <label htmlFor="nagarik">Nagarik</label>
+            <input
+              type="radio"
+              checked={userType === 'safa_ghar'}
+              onChange={() => setUserType('safa_ghar')}
+              id="safa_ghar"
+              name="userType"
+            />
+            <label htmlFor="safa_ghar">Safa Ghar</label>
+          </div>
 
-                <input type="radio" id="g_collector" name="user" value="g_collector" required />
-                <label htmlFor="g_collector">G-collector</label>
-                <input type="radio" id="safa_ghar" name="user" value="safa_ghar"required />
-                <label htmlFor="safa_ghar">Safa Ghar</label>
+          <input type="submit" value="Register" className="register-button" />
+        </form>
+      </div>
+      <Footer />
+    </>
+  );
+};
 
-            </div>
-            <input type="submit" value="Register" className="register-button"/>
-            </form>
+export default Register;
 
-    </div>
-</r>
-<Footer/>
-</>
-  )
-}
 
-export default Register
